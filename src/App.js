@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams} 
 // Pages
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
 
 class App extends Component {
   render(){
@@ -22,6 +23,11 @@ class App extends Component {
             component={About}
           />
           
+          <Route
+            path = "/contact"
+            component={Contact}
+            />
+
         </PageWrapper>
       </Router>
     );
